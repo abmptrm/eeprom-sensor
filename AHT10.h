@@ -6,18 +6,16 @@
 
 class AHT10 {
     public:
-        
         // Constructor
-        AHT10(void);
         void init();
-        void read_temp();
-        void write_temp();
+        int read_temp(int val_temp);
+        int write_temp();
 
     private:
+    
         // Data members if needed
-
-        
-
 };
+extern Adafruit_AHT10 aht;
+extern Adafruit_Sensor *aht_temp;
 
 #endif

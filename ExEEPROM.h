@@ -6,8 +6,7 @@
 
 class ExEEPROM {
   public:
-    ExEEPROM(int addr_e); 
-    ExEEPROM();
+    
     void init();
     int write(int addr, int val);
     int read(int addr);  

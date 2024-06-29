@@ -4,8 +4,6 @@
 
 #define EEPROM_ADDR 0x50
 
-ExEEPROM::ExEEPROM(int addr) : addr_e(EEPROM_ADDR) {}
-
 void ExEEPROM::init(){
   Wire.begin();
   Serial.println("EEPROM Is Ready!");
